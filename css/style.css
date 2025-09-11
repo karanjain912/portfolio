@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+section {
+  padding: 40px 15px;
+  margin-bottom: 40px;
+}
+body {
+  background: #0f172a;
+  color: #f1f5f9;
+  line-height: 1.6;
+}
+
+header {
+  background: rgba(15, 23, 42, 0.95);
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #60a5fa;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #f1f5f9;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #60a5fa;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  color: white;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero h2 span {
+  color: #22d3ee;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #22d3ee;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #22d3ee;
+  color: #0f172a;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #60a5fa;
+}
+.Summary{
+  display: grid;
+  grid-template-columns:1fr;
+  gap: 20px;
+}
+.Summary-card {
+    background: #1e293b;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: transform 0.5s, box-shadow 0.3s
+}
+.Summary-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(96, 165, 250, 0.4);
+}
+.Education{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.Education-card {
+    background: #1e293b;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: transform 0.5s, box-shadow 0.3s
+}
+.Education-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(96, 165, 250, 0.4);
+}
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.skills-card {
+    background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: transform 0.5s, box-shadow 0.3s
+}
+.skills-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(96, 165, 250, 0.4);
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(96, 165, 250, 0.4);
+}
+.certificates{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.certificate-card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+  text-decoration: none;   /* remove link underline */
+  color: inherit;          /* keep text color */
+  display: block;          /* makes <a> behave like a card */
+}
+
+.certificate-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(96, 165, 250, 0.4);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #0f172a;
+  border-top: 1px solid #1e293b;
+}
+
+/* Animations */
+html { scroll-behavior: smooth; }
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.slide-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
