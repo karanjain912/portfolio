@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 // Typing Animation
 const typingText = document.querySelector(".typing");
-const textArray = ["Aspiring Software Developer", "Tech Enthusiast", "Problem Solver"];
+const textArray = ["Tech Enthusiast", "Problem Solver"];
 let textIndex = 0;
 let charIndex = 0;
 
